@@ -47,7 +47,7 @@ display: flex;
     width: 100%;
     height: auto;
         @media only screen and (max-width: 600px) {
-   width: 125%;
+   width: 130%;
    bottom: 2rem;
  
 }
