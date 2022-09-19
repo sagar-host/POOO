@@ -13,7 +13,7 @@ transform: translate(-50%, -50%);
 
 
 width: 65vw;
-height:55vh;
+height:70vh;
 display: flex;
 
 
@@ -46,19 +46,28 @@ display: flex;
     transform: translate(-50%,0%);
     width: 100%;
     height: auto;
+        @media only screen and (max-width: 600px) {
+   width: 165%;
+   bottom: 2rem;
+ 
+}
 }
 `
 
 const Text = styled.div`
-font-size: calc(1em + 1.5vw);
+ font-size: calc(0.5em +0.5vw);
 color: ${props => props.theme.body};
-padding: 2rem;
+padding: 5rem;
 cursor: pointer;
 
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-
+@media only screen and (max-width: 600px) {
+  
+  padding: 20px;
+  font-size: calc(0.6em + 1.5vw);
+}
 &>*:last-child{
     color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
     font-size: calc(0.5rem + 1.5vw);
@@ -74,7 +83,7 @@ const Intro = () => {
     return (
         <Box
         initial={{height:0}}
-        animate={{height: '55vh'}}
+        animate={{height: '26vh'}}
         transition={{ type: 'spring', duration:2, delay:1 }}
         >
             <SubBox>
